@@ -1,0 +1,17 @@
+.banner-contant {
+  text-align: center;
+  color: $white;
+  h2 {
+    font-size: 38px;
+    text-transform: capitalize;
+    padding: 10px 0;
+  }
+  p {
+    max-width: 600px;
+    margin: 40px auto;
+  }
+  a {
+    color: $white;
+    margin: 10px 10px;
+  }
+}

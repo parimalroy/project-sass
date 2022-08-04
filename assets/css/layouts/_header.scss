@@ -1,0 +1,35 @@
+@import '../base/color';
+.header-area {
+  .main {
+    .header {
+      padding: 35px 0;
+      .logo {
+        width: 300px;
+        float: left;
+        padding-right: 30px;
+        h2 {
+          text-transform: capitalize;
+          font-size: 30px;
+        }
+      }
+      .menu {
+        width: 870px;
+        float: right;
+        text-align: right;
+        ul {
+          li {
+            display: inline-block;
+            padding: 0 20px;
+          }
+          a {
+            text-transform: capitalize;
+            font-size: 18px;
+            &:hover{
+                color: $primary_color;
+            }
+          }
+        }
+      }
+    }
+  }
+}

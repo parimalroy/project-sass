@@ -1,51 +1,97 @@
-@import 'color';
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "color";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-img{
-    max-width: 100%;
-    vertical-align: middle;
+img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
-a{
-    text-decoration: none;
-    color: $black;
-    transition: .3s;
+a {
+  text-decoration: none;
+  color: $black;
+  transition: 0.3s;
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
+}
+.main {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.fix::before, .fix::after{
-    content:"";
-    clear: both;
-    display: table;
+.fix::before,
+.fix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+// background style
+.bg{
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: 2;
+    &::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: $black;
+        opacity: 0.75;
+        z-index: -1;
+        
+    }
 }
 
 // padding and margin
-@for $i from 1 through 10{
-    pb-#{$i * 10}{
-        padding-bottom: $i * 10px;
+@for $i from 1 through 10 {
+  .pb-#{$i * 10} {
+    padding-bottom: $i * 10px;
+  }
+  .pt-#{$i * 10} {
+    padding-top: $i * 10px;
+  }
+  .mb-#{$i * 10} {
+    margin-bottom: $i * 10px;
+  }
+  .mt-#{$i * 10} {
+    margin-top: $i * 10px;
+  }
+}
+
+// button style
+.btn{
+    padding: 10px 20px;
+    text-transform: capitalize;
+    font-size: 15px;
+    text-transform: capitalize;
+    &.btn-box{
+        background-color: $primary_color;
+        transition: 0.3s;
+    }&:hover{
+        color: $black;
     }
-    pt-#{$i * 10}{
-        padding-top: $i * 10px;
-    }
-    mb-#{$i * 10}{
-        margin-bottom: $i * 10px;
-    }
-    mt-#{$i * 10}{
-        margin-top: $i * 10px;
+    &.btn-border{
+        border: 1px solid $primary_color;
+        transition: .3s;
+    }&:hover{
+        background-color: $primary_color;
+        color: $black;
     }
 }
 
 $list: left, center, right, justify;
 
-@each $i in $list{
-    .text-#{$i}{
-        text-align: $i;
-    }
+@each $i in $list {
+  .text-#{$i} {
+    text-align: $i;
+  }
 }
