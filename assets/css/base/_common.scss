@@ -1,0 +1,51 @@
+@import 'color';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+a{
+    text-decoration: none;
+    color: $black;
+    transition: .3s;
+}
+
+ul{
+    list-style: none;
+}
+
+.fix::before, .fix::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+
+// padding and margin
+@for $i from 1 through 10{
+    pb-#{$i * 10}{
+        padding-bottom: $i * 10px;
+    }
+    pt-#{$i * 10}{
+        padding-top: $i * 10px;
+    }
+    mb-#{$i * 10}{
+        margin-bottom: $i * 10px;
+    }
+    mt-#{$i * 10}{
+        margin-top: $i * 10px;
+    }
+}
+
+$list: left, center, right, justify;
+
+@each $i in $list{
+    .text-#{$i}{
+        text-align: $i;
+    }
+}
