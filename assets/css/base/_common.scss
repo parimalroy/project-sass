@@ -51,6 +51,35 @@ ul {
     }
 }
 
+// section title
+
+.section-title {
+  margin: 20px 0;
+  h2 {
+    text-transform: capitalize;
+    font-size: 30px;
+    display: inline-block;
+    margin-bottom: 20px;
+    position: rea;
+    position: relative;
+    &::before{
+      content: "";
+      position: absolute;
+      width: 70px;
+      height: 2px;
+      background-color: $primary_color;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  p{
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+
 // padding and margin
 @for $i from 1 through 10 {
   .pb-#{$i * 10} {
@@ -77,14 +106,14 @@ ul {
         background-color: $primary_color;
         transition: 0.3s;
     }&:hover{
-        color: $black;
+        background-color: $black
     }
     &.btn-border{
         border: 1px solid $primary_color;
         transition: .3s;
     }&:hover{
-        background-color: $primary_color;
-        color: $black;
+        border-color:$white;
+        color: $white;
     }
 }
 

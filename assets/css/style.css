@@ -50,6 +50,32 @@ ul {
   z-index: -1;
 }
 
+.section-title {
+  margin: 20px 0;
+}
+.section-title h2 {
+  text-transform: capitalize;
+  font-size: 30px;
+  display: inline-block;
+  margin-bottom: 20px;
+  position: rea;
+  position: relative;
+}
+.section-title h2::before {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 2px;
+  background-color: #ff7720;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.section-title p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -221,15 +247,15 @@ ul {
   transition: 0.3s;
 }
 .btn:hover {
-  color: #333;
+  background-color: #333;
 }
 .btn.btn-border {
   border: 1px solid #ff7720;
   transition: 0.3s;
 }
 .btn:hover {
-  background-color: #ff7720;
-  color: #333;
+  border-color: #fff;
+  color: #fff;
 }
 
 .text-left {
@@ -297,4 +323,67 @@ body {
 .banner-contant a {
   color: #fff;
   margin: 10px 10px;
+  display: inline-block;
+}
+
+.about .single-about {
+  float: left;
+  width: 380px;
+  margin-right: 30px;
+  border: 2px solid #f2f2f2;
+}
+.about .single-about:last-child {
+  margin-right: 0;
+}
+.about .single-about h2 {
+  text-transform: capitalize;
+  margin: 10px 0;
+  font-size: 25px;
+  font-weight: 500;
+}
+.about .single-about p {
+  margin: 30px 0;
+}
+.about .single-about a {
+  display: inline-block;
+  margin: 10px 0;
+}
+
+.services-area {
+  background-color: #f2f2f2;
+}
+
+.services .single-services {
+  width: 370px;
+  float: left;
+  text-align: center;
+  border: 2px solid #ddd;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.services .single-services:hover {
+  border-color: #ff7720;
+}
+.services .single-services:hover i {
+  background-color: #ff7720;
+  color: #fff;
+  border-color: #ff7720;
+}
+.services .single-services:nth-child(3) {
+  margin-right: 0;
+}
+.services .single-services i {
+  font-size: 30px;
+  padding: 10px;
+  background: gray;
+  border-radius: 50%;
+  margin: 10px 0;
+}
+.services .single-services h2 {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 25px;
+}
+.services .single-services p {
+  padding: 10px;
 }/*# sourceMappingURL=style.css.map */
