@@ -7,15 +7,25 @@
         width: 300px;
         float: left;
         padding-right: 30px;
+        text-align: center;
         h2 {
           text-transform: capitalize;
-          font-size: 30px;
+          font-size: 28px;
+          border-bottom: 2px solid $primary_color;
+          border-radius: 50%;
+          span{
+            color: $primary_color;
+            font-size: 40px;
+            font-style: italic;
+            
+          }
         }
       }
       .menu {
         width: 870px;
         float: right;
         text-align: right;
+        padding-top: 18px;
         ul {
           li {
             display: inline-block;

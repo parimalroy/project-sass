@@ -76,6 +76,43 @@ ul {
   margin: 0 auto;
 }
 
+.single-item {
+  position: relative;
+}
+.single-item .slick-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 1;
+  background-color: #fc5d35;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+  display: inline-block;
+  line-height: -16px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+.single-item .slick-next {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  background-color: #333;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  text-align: center;
+  padding: 8px;
+  display: inline-block;
+  line-height: -16px;
+  border-radius: 10%;
+  cursor: pointer;
+  color: #fff;
+}
+
 .pb-10 {
   padding-bottom: 10px;
 }
@@ -285,15 +322,24 @@ body {
   width: 300px;
   float: left;
   padding-right: 30px;
+  text-align: center;
 }
 .header-area .main .header .logo h2 {
   text-transform: capitalize;
-  font-size: 30px;
+  font-size: 28px;
+  border-bottom: 2px solid #ff7720;
+  border-radius: 50%;
+}
+.header-area .main .header .logo h2 span {
+  color: #ff7720;
+  font-size: 40px;
+  font-style: italic;
 }
 .header-area .main .header .menu {
   width: 870px;
   float: right;
   text-align: right;
+  padding-top: 18px;
 }
 .header-area .main .header .menu ul li {
   display: inline-block;
