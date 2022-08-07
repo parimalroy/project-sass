@@ -18,7 +18,10 @@ $(document).ready(function () {
     changeHash: false,
   });
 
-  // $("#sticker").sticky({topSpacing:0});
+  $("#nav").slicknav({
+    label: "",
+    duration: 1000,
+  });
 });
 
 // sticky menu js

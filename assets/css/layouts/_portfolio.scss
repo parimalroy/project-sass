@@ -2,7 +2,7 @@
   .single-portfolio {
     height: 250px;
     float: left;
-    width: 370px;
+    width: 380px;
     margin-right: 30px;
     margin-bottom: 30px;
     background-position: center;
@@ -13,7 +13,7 @@
     &:hover{
         transform: scale(1.1);
     }
-    &:last-child {
+    &:last-child, &:nth-child(3) {
       margin-right: 0;
     }
     h2 {

@@ -1,38 +1,38 @@
-.services-area{
-    background-color: $bg_gray;
+.services-area {
+  background-color: $bg_gray;
 }
 .services {
   .single-services {
-    width: 370px;
+    width: 380px;
     float: left;
     text-align: center;
     border: 2px solid $border_gray;
     margin-right: 30px;
     margin-bottom: 30px;
-    &:hover{
+    &:hover {
+      border-color: $primary_color;
+      i {
+        background-color: $primary_color;
+        color: $white;
         border-color: $primary_color;
-        i{
-            background-color: $primary_color;
-            color: $white;
-            border-color: $primary_color;
-        }
+      }
+    }
+    &:last-child,
+    &:nth-child(3) {
+      margin-right: 0;
+    }
 
-    }
-    &:nth-child(3){
-        margin-right: 0;
-    }
     i {
       font-size: 30px;
       padding: 10px;
       background: gray;
       border-radius: 50%;
-      margin:10px 0;
+      margin: 10px 0;
     }
     h2 {
       text-transform: capitalize;
       font-weight: 500;
       font-size: 25px;
-
     }
     p {
       padding: 10px;
