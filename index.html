@@ -22,13 +22,13 @@
             <h2><span>di</span> web</h2>
           </div>
           <div class="menu">
-            <ul>
-              <li><a href="">home</a></li>
-              <li><a href="">about</a></li>
-              <li><a href="">services</a></li>
-              <li><a href="">portfolio</a></li>
-              <li><a href="">blog</a></li>
-              <li><a href="">contact us</a></li>
+            <ul id="nav">
+              <li><a href="#home">home</a></li>
+              <li><a href="#about">about</a></li>
+              <li><a href="#services">services</a></li>
+              <li><a href="#portfolio">portfolio</a></li>
+              <li><a href="#blog">blog</a></li>
+              <li><a href="#contact">contact us</a></li>
             </ul>
           </div>
         </div>
@@ -36,7 +36,7 @@
     </div>
     <!-- header section end -->
     <!-- banner section start -->
-    <section class="banner-area pt-20 pb-20 single-item">
+    <section class="banner-area single-item" id="home">
       <div
         class="bg pt-50 pb-50"
         style="background-image: url('assets/img/banner.jpg')"
@@ -71,7 +71,7 @@
               Reprehenderit, quos.
             </p>
             <a href="" class="btn btn-box">contact us</a>
-            <a href="" class="btn btn-border">our portfolio</a>
+            <a href="" class="btn btn-border" id="about">our portfolio</a>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
 
     <!-- banner section end -->
     <!-- about section start -->
-    <section class="about-area pt-100 pb-100">
+    <section class="about-area pt-100 pb-100" >
       <div class="main">
         <div class="section-title text-center">
           <h2>about us</h2>
@@ -115,14 +115,14 @@
               Reiciendis quae quam quasi vel. Suscipit aspernatur praesentium
               hic quo animi itaque illo quisquam voluptatem natus nesciunt.
             </p>
-            <a href="" class="btn btn-border">read more</a>
+            <a href="" class="btn btn-border" id="services">read more</a>
           </div>
         </div>
       </div>
     </section>
     <!-- about section end -->
     <!-- services section start -->
-    <section class="services-area pt-50 pb-50">
+    <section class="services-area pt-50 pb-50" >
       <div class="main">
         <div class="section-title text-center">
           <h2>Services</h2>
@@ -181,7 +181,7 @@
           <div class="single-services">
             <i class="fa-regular fa-mobile"></i>
             <h2>24/7 services</h2>
-            <p>
+            <p  id="portfolio">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores
               quia et eum magnam quasi reprehenderit velit minus voluptas a
               voluptatibus!
@@ -192,7 +192,7 @@
     </section>
     <!-- services section end -->
     <!-- portfolio section start -->
-    <section class="portfolio-area pt-80 pb-80">
+    <section class="portfolio-area pt-80 pb-80" >
       <div class="main">
         <div class="section-title text-center">
           <h2>latest portfolio</h2>
@@ -256,15 +256,15 @@
             quia optio aliquam natus enim fugiat error est excepturi ipsum
             molestiae?
           </p>
-          <a href="" class="btn btn-box">Let's go</a>
+          <a href="" class="btn btn-box"  id="blog">Let's go</a>
         </div>
       </div>
     </section>
     <!-- cta section end -->
     <!-- blog section start -->
-    <div class="section blog-area pb-80 pt-80">
+    <section class="blog-area pb-80 pt-80">
       <div class="main">
-        <div class="section-title text-center">
+        <div class="section-title text-center" >
           <h2>exclusive blog</h2>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
@@ -323,10 +323,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <!-- blog section end -->
     <!-- contact section start -->
-    <section class="contact-area pb-80 pt-50">
+    <section class="contact-area pb-80 pt-50" id="contact">
       <div class="main">
         <div class="section-title text-center">
           <h2>contact us</h2>
@@ -376,7 +376,12 @@
     </footer>
     <!-- footer section end -->
     <script src="assets/js/jquery.min.js"></script>
+    <!-- slider js -->
     <script src="assets/js/slick.min.js"></script>
+    <!-- onepage nav -->
+    <script src="assets/js/jquery.nav.js"></script>
+
+    <!-- <script src="assets/js/jquery.sticky.js"></script> -->
     <script src="assets/js/custom.js"></script>
   </body>
 </html>

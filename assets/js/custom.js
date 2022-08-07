@@ -11,4 +11,27 @@ $(document).ready(function () {
     nextArrow:
       '<button type="button" class="slick-next"><i class="fa-solid fa-chevron-right"></i></button>',
   });
+
+  // one page nav
+  $("#nav").onePageNav({
+    currentClass: "current",
+    changeHash: false,
+  });
+
+  // $("#sticker").sticky({topSpacing:0});
+});
+
+// sticky menu js
+$(window).on("scroll", function () {
+  if ($(this).scrollTop() > 20) {
+    $(".header-area").addClass("sticky");
+  } else {
+    $(".header-area").removeClass("sticky");
+  }
+
+  //  slick nav js
+  // $("#nav").slicknav({
+  //   label: "",
+  //   duration: 1000,
+  // });
 });

@@ -1,5 +1,10 @@
-@import '../base/color';
+@import "../base/color";
 .header-area {
+  position: fixed;
+  left: 0;
+  right: 0;
+  padding: 10px 0;
+  z-index: 99;
   .main {
     .header {
       padding: 35px 0;
@@ -13,11 +18,10 @@
           font-size: 28px;
           border-bottom: 2px solid $primary_color;
           border-radius: 50%;
-          span{
+          span {
             color: $primary_color;
             font-size: 40px;
             font-style: italic;
-            
           }
         }
       }
@@ -34,11 +38,27 @@
           a {
             text-transform: capitalize;
             font-size: 18px;
-            &:hover{
-                color: $primary_color;
+            &:hover {
+              color: $primary_color;
             }
           }
         }
+      }
+    }
+  }
+ 
+}
+.sticky{
+  background-color: $black;
+  .logo{
+    h2{
+      color: $white;
+    }
+  }
+  ul{
+    li{
+      a{
+        color:$white;
       }
     }
   }
